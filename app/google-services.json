@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "701381324776",
+    "project_id": "caculadoraimc-1595b",
+    "storage_bucket": "caculadoraimc-1595b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701381324776:android:3d21e847508f14f10d3e5d",
+        "android_client_info": {
+          "package_name": "com.udenar.interacionboton"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv70Rk5luN_1o3wQbFKOR5cJjUQ6d4yAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

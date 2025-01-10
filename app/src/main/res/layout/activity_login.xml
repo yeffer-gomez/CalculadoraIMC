@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fondo con un gradiente para una apariencia moderna -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/gradient_background">
+
+        <!-- CardView que envuelve el contenido -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="582dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Imagen del logo en la parte superior dentro del CardView -->
+                <ImageView
+                    android:id="@+id/imagenlogo"
+                    android:layout_width="124dp"
+                    android:layout_height="112dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="24dp"
+                    android:contentDescription="Logo"
+                    android:src="@drawable/imc22" />
+
+                <!-- Campo de texto para el correo electrónico con ícono -->
+                <LinearLayout
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:elevation="6dp"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/email" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="Email"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <!-- Campo de texto para la contraseña con ícono -->
+                <LinearLayout
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:elevation="6dp"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/pas" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <!-- Botón de login mejorado con márgenes ajustados -->
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/rounded_button"
+                    android:elevation="6dp"
+                    android:text="Iniciar sesión"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Botón de registro con más espaciado y márgenes ajustados -->
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/rounded_button"
+                    android:elevation="6dp"
+                    android:text="Registrarse"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</FrameLayout>
